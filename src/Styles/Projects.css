@@ -1,0 +1,177 @@
+:root {
+    --color_1: #FAFAFF;
+    --color_2: #EEF0F2;
+    --color_3: #ECEBE4;
+    --color_4: #DADDD8;
+    --color_5: #1C1C1C;
+    --color_6: #5c7aff;
+    --color_7: #faf9f9;
+    --color_8: #bdc9ff;
+}
+
+@media(width >=820px) {
+    .projects {
+        width: 95%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        background-color: var(--color_7);
+        border: 5px solid var(--color_5);
+        position: relative;
+        padding-bottom: 3rem;
+    }
+
+    .projects h2 {
+        position: absolute;
+        top: 5rem;
+    }
+
+    .projects_carousell {
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.8rem;
+    }
+
+    .projects_carousell img {
+        max-width: 100%;
+        display: block;
+    }
+
+    .projects_carousell_item {
+        position: relative;
+    }
+
+    .projects_carousell_item {
+        padding: 0.2rem;
+    }
+
+    .projects_carousell_item::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+        transition: transform 0.3s;
+        background-color: rgba(189, 201, 255, 0.377);
+    }
+
+    .projects_carousell_item:hover::after {
+        transform: translateY(0);
+        cursor: pointer;
+        border: 0.1rem solid var(--color_5);
+    }
+
+    .projects_carousell_item button {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        border: none;
+        z-index: 5;
+        font-size: 3rem;
+    }
+
+    .projects_carousell_item a {
+        text-decoration: none;
+        color: var(--color_5);
+    }
+
+    .projects_carousell_item button:hover {
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .projects_carousell_item .bx {
+        color: var(--color_5);
+    }
+}
+
+@media(width < 820px) {
+    .projects {
+        width: 95%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        background-color: var(--color_7);
+        border: 5px solid var(--color_5);
+        position: relative;
+        gap: 3rem;
+    }
+
+    .projects h2 {
+        padding: 0.3rem;
+        font-size: 1.2rem;
+    }
+
+    .projects_carousell {
+        width: 85%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .projects_carousell img {
+        max-width: 65%;
+        display: block;
+    }
+
+    .projects_carousell_item {
+        position: relative;
+        border-top: 0.1rem solid var(--color_5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects_carousell_item {
+        padding: 0.2rem;
+    }
+
+    .projects_carousell_item button {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        border: none;
+        z-index: 5;
+        font-size: 4rem;
+    }
+
+    .projects_carousell_item a {
+        text-decoration: none;
+        color: var(--color_5);
+    }
+
+    .projects_carousell_item button:hover {
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .projects_carousell_item .bx {
+        color: var(--color_5);
+    }
+}
+
+@media (width < 500px) {
+    .projects_carousell_item .bx {
+        color: var(--color_5);
+        font-size: 2.5rem;
+    }
+}

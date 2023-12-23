@@ -1,0 +1,130 @@
+:root {
+    --color_1: #FAFAFF;
+    --color_2: #EEF0F2;
+    --color_3: #ECEBE4;
+    --color_4: #DADDD8;
+    --color_5: #1C1C1C;
+    --color_6: #5c7aff;
+    --color_7: #faf9f9;
+    --color_8: #bdc9ff;
+}
+
+.Home {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_7);
+    position: relative;
+    top: 6rem;
+}
+
+.cad_1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.solid_1 {
+    width: 100px;
+    height: 20.66px;
+}
+
+.auto_1 {
+    width: 100px;
+    height: 17.66px; 
+}
+
+.Home_introduction {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 0.4rem; 
+}
+
+@media ( width < 820px){
+    .Home_introduction {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 0.3rem; 
+    } 
+}
+
+.Home_introduction::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -70px;
+    border-top: 40px solid var(--color_7);
+    border-bottom: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-left: 35px solid transparent;
+}
+
+.Home_introduction h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color_5);
+}
+
+.Home_introduction h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--color_5);
+}
+
+@media ( 400px < width < 620px){
+    .Home_introduction h1 {
+        text-align: center;
+        font-size: 2rem;
+        color: var(--color_5);
+    }
+    
+    .Home_introduction h2 {
+        text-align: center;
+        font-size: 1rem;
+        color: var(--color_5);
+    } 
+}
+
+@media ( 250px < width <= 400px){
+    .Home_introduction h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--color_5);
+    }
+    
+    .Home_introduction h2 {
+        text-align: center;
+        font-size: 0.8rem;
+        color: var(--color_5);
+    } 
+}
+
+@media ( width <= 250px){
+    .Home_introduction h1 {
+        text-align: center;
+        font-size: 1.1rem;
+        color: var(--color_5);
+    }
+    
+    .Home_introduction h2 {
+        text-align: center;
+        font-size: 0.6rem;
+        color: var(--color_5);
+    } 
+}

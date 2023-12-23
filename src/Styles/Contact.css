@@ -1,0 +1,202 @@
+:root {
+    --color_1: #FAFAFF;
+    --color_2: #EEF0F2;
+    --color_3: #ECEBE4;
+    --color_4: #DADDD8;
+    --color_5: #1C1C1C;
+    --color_6: #5c7aff;
+    --color_7: #faf9f9;
+    --color_8: #bdc9ff;
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_5);
+    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+
+.contact_item {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact_item h2 {
+    text-align: left;
+    font-size: 7.5rem;
+    color: var(--color_7);
+}
+
+.contact_item a {
+    text-decoration: none;
+    color: rgb(75,71,71);
+}
+
+.contact_item a:hover {
+    text-decoration: underline;
+}
+
+@media(1390px < width <= 1620px){
+    .contact_item {
+        width: 95%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item h2 {
+        text-align: left;
+        font-size: 6rem;
+        color: var(--color_7);
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75,71,71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}
+
+@media(1205px < width <= 1390px){
+    .contact_item {
+        width: 95%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item h2 {
+        text-align: left;
+        font-size: 6rem;
+        color: var(--color_7);
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75,71,71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}
+
+@media(1205px < width <= 1390px){
+    .contact_item {
+        width: 95%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item h2 {
+        text-align: left;
+        font-size: 6rem;
+        color: var(--color_7);
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75,71,71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}
+
+@media(800px < width <= 1205px){
+    .contact_item {
+        width: 95%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item h2 {
+        text-align: left;
+        font-size: 5.8rem;
+        color: var(--color_7);
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75,71,71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}
+
+@media(500px < width <= 800px){
+    .contact_item {
+        width: 95%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item h2 {
+        text-align: left;
+        font-size: 4.8rem;
+        color: var(--color_7);
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75,71,71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}
+
+@media(100px < width <= 500px){
+    .contact_item {
+        width: 95%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item h2 {
+        text-align: left;
+        font-size: 2.7rem;
+        color: var(--color_7);
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75,71,71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}

@@ -1,0 +1,335 @@
+:root {
+    --color_1: #FAFAFF;
+    --color_2: #EEF0F2;
+    --color_3: #ECEBE4;
+    --color_4: #DADDD8;
+    --color_5: #1C1C1C;
+    --color_6: #5c7aff;
+    --color_7: #faf9f9;
+    --color_8: #bdc9ff;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--color_7);
+    z-index: 10;
+    margin-top: 50px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.container1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_7);
+}
+
+.container1_btns {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_7);
+    gap: 4rem;
+}
+
+.container1_name {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_3);
+}
+
+.container1 button {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 4rem;
+    border: none;
+    background: none;
+    background-color: transparent;
+}
+
+.container1 button .bx {
+    color: var(--color_5);
+    font-size: 4rem;
+}
+
+.container2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_4);
+}
+
+.container2_logos {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_3);
+    gap: 5rem;
+}
+
+.container2_logos_square {
+    width: 25px;
+    height: 25px;
+    border: 3px solid var(--color_5);
+    border-radius: 5px;
+}
+
+.container2_logos_triangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+.container2_logos_triangle::after {
+    content: '';
+    display: block;
+    border-top: 15px solid transparent;
+    border-bottom: 28px solid var(--color_5);
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    position: absolute;
+    bottom: 0px;
+}
+
+.container2_logos_circle {
+    width: 25px;
+    height: 25px;
+    border: 3px solid var(--color_5);
+    border-radius: 50%; 
+}
+
+.container2_thx {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_7);
+    gap: 3rem;  
+}
+
+.container2_thx h5 {
+    font-size: 1.2rem;
+}
+
+.container2_thx a {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.container2_thx .bx {
+    font-size: 2.5rem;
+    color: var(--color_5);
+}
+
+@media ( 600px < width < 1000px){
+    .container1 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_7);
+        transform: scale(0.8);
+    }
+    
+    .container1_btns {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_7);
+        gap: 2.5rem;
+    }
+    
+    .container1 button {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: 2rem;
+        border: none;
+        background: none;
+        background-color: transparent;
+    }
+    
+    .container1 button .bx {
+        color: var(--color_5);
+        font-size: 4rem;
+    }
+    
+    .container2 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_4);
+        transform: scale(0.8);
+    }
+    
+    .container2_thx {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_7);
+        gap: 1.5rem;  
+    }
+    
+    .container2_thx h5 {
+        font-size: 1rem;
+    }
+    
+    .container2_thx a {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    
+    .container2_thx .bx {
+        font-size: 2rem;
+        color: var(--color_5);
+    }  
+}
+
+@media ( 0 < width <= 600px){
+
+    .footer {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: var(--color_7);
+        z-index: 10;
+        margin-top: 50px;
+    }
+
+    .container1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_7);
+        transform: scale(0.8);
+    }
+    
+    .container1_btns {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_7);
+        gap: 1rem;
+    }
+    
+    .container1 button {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: 3rem;
+        border: none;
+        background: none;
+        background-color: transparent;
+    }
+    
+    .container2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_4);
+        transform: scale(0.95);
+    }
+    
+    .container1_name {
+        display: none;
+    }
+
+    .container2_logos {
+        display: none;
+    }
+    
+    .container2_thx h5 {
+        font-size: 1rem;
+    }
+
+    .container2_thx{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        background-color: var(--color_7);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .container2_thx a {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    
+    .container2_thx .bx {
+        font-size: 2rem;
+        color: var(--color_5);
+    }  
+}

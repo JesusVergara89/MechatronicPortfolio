@@ -1,0 +1,65 @@
+:root {
+    --color_1: #FAFAFF;
+    --color_2: #EEF0F2;
+    --color_3: #ECEBE4;
+    --color_4: #DADDD8;
+    --color_5: #1C1C1C;
+    --color_6: #5c7aff;
+    --color_7: #faf9f9;
+    --color_8: #bdc9ff;
+}
+
+.video_card {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_4);
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.video_card_rectangle {
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -30px;
+    border: 0.3rem solid var(--color_5);
+    background-color: var(--color_7);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.video_card_rectangle h2 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.video_card_rectangle_videos {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 1.5rem;
+    box-sizing: content-box;
+}
+
+@media ( width < 500px) {
+    .video_card_rectangle h2 {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 1.2rem;
+    }
+}
+
